@@ -10,7 +10,7 @@
   <link rel="stylesheet" type="text/css" media="screen" href="main.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
-  <script src="main.js"></script>
+  <script defer src="main.js"></script>
 </head>
 
 <body>
@@ -54,13 +54,13 @@
     <!-- The right DIV containing features pertaining to calorie entries -->
     <div class="uk-width-1-2 uk-card uk-card-default uk-padding uk-margin-left">
       <form id="new-calorie-form">
-        <h3>Record calorie intake:</h3>
+        <h3 id="calorie-sum">Record calorie intake:</h3>
         <div>
           <div class="uk-margin-small">
-            <input type="number" class="uk-input" min="0" placeholder="Calories (kcal)">
+            <input id="calorie-input" type="number" class="uk-input" min="0" placeholder="Calories (kcal)">
           </div>
           <div class="uk-margin-small">
-            <textarea type="text" class="uk-textarea" placeholder="Notes" style="resize:none"></textarea>
+            <textarea id="notes-input" type="text" class="uk-textarea" placeholder="Notes" style="resize:none"></textarea>
           </div>
           <button class="uk-button uk-button-default">Add Calorie Intake</button>
         </div>
